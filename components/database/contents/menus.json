@@ -44,17 +44,6 @@
 		"sort": 8
 	},
 	{
-		"id": 54,
-		"text": "Buy Now",
-		"url": "#",
-		"menu_items": "custom",
-		"icon": "fas fa-shopping-basket",
-		"type": "button",
-		"class": "btn-primary",
-		"parent_id": 0,
-		"sort": 9
-	},
-	{
 		"id": 59,
 		"text": "Hello 2",
 		"url": "#",

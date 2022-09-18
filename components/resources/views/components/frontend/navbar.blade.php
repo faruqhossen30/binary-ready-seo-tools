@@ -11,7 +11,7 @@
             @else
                 <img src="{{ $header->logo_light }}" alt="{{ __($homeTitle) }}" class="navbar-brand-image">
             @endif
-            
+
         @else
           {{ $homeTitle }}
         @endif
@@ -26,7 +26,7 @@
     </button>
 
     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
-      
+
         <ul class="navbar-nav navbar-nav-hover mx-auto">
 
             <!-- Begin::Navbar Left -->
@@ -47,7 +47,7 @@
                                 @else
                                     <img src="{{ asset('assets/img/down-arrow.svg') }}" alt="down-arrow" class="arrow ms-1" />
                                 @endif
-                               
+
                             </a>
 
                             <x-frontend.menu :childs="$value['children']" />
@@ -80,7 +80,7 @@
 
                 <li class="nav-item dropdown mx-2">
                     <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" data-bs-toggle="dropdown">
-                        <img src="{{ asset('assets/img/flags/' . localization()->getCurrentLocale() . '.svg') }}" class="lang-menu me-2 my-auto"> 
+                        <img src="{{ asset('assets/img/flags/' . localization()->getCurrentLocale() . '.svg') }}" class="lang-menu me-2 my-auto">
                         {{ localization()->getCurrentLocaleNative() }}
                             @if( Cookie::get('theme_mode') === 'theme-light' )
                                 <img src="{{ asset('assets/img/down-arrow-dark.svg') }}" alt="down-arrow" class="arrow ms-1" />
@@ -96,7 +96,7 @@
                        @endforeach
                     </div>
                 </li>
-              
+
             @endif
             <!-- End:Lang Menu -->
         </ul>
@@ -164,7 +164,7 @@
 
             <!-- Begin::Login -->
             @if ( \App\Models\Admin\AuthPages::where('name', 'Login')->first()->status == true)
-            
+
                 @if ( Auth::user() )
 
                     <li class="dropdown mx-2 mx-lg-auto my-2 my-lg-auto">
